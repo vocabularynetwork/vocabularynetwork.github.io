@@ -1,7 +1,7 @@
 ---
 layout: page
-title: À propos
-ref: about2
+title: ContactFr
+ref: contact
 lang: fr
 ---
 

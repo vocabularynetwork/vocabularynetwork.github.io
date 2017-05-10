@@ -1,8 +1,8 @@
 ---
 layout: page
-title: About
-permalink: /about/
-ref: about2
+title: Contact
+permalink: /about2/
+ref: contact
 lang: en
 ---
 
