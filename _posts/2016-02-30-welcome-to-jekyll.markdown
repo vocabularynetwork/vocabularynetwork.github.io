@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Welcome to Jekyll2!"
+title:  "Welcome to Jekyll 2!"
 ref: welcome2
 date:   2016-02-30 09:48:44 +0100
 categories: jekyll update
