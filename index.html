@@ -21,6 +21,7 @@ lang: en
     {% endfor %}
   </ul>
 {% for post in site.posts %}
+a
   {% if post.lang == page.lang %}
     {% if prev %}
       <a href="{{ post.url }}">Previous</a>
@@ -33,6 +34,7 @@ lang: en
 {% endfor %}
 
 {% for post in site.posts reversed %}
+b
   {% if post.lang == page.lang %}
     {% if next %}
       <a href="{{ post.url }}">Next</a>
