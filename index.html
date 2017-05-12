@@ -22,8 +22,6 @@ lang: en
   </ul>
 
   <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>
 {% for post in site.posts %}
   {% if post.lang == page.lang %}
     {% if prev %}
@@ -47,3 +45,4 @@ lang: en
     {% endif %}
   {% endif %}
 {% endfor %}
+</div>
