@@ -20,7 +20,30 @@ lang: en
       </li>
     {% endfor %}
   </ul>
-
+{% for post in site.posts %}
+  {% if post.lang == page.lang %}
+    {% if prev %}
+      <a href="{{ post.url }}">Previous</a>
+    {% endif %}
+    {% assign prev = false %}
+    {% if post.id == page.id %}
+      {% assign prev = true %}
+    {% endif %}
+  {% endif %}
+{% endfor %}
+---
+{% for post in site.posts reversed %}
+  {% if post.lang == page.lang %}
+    {% if next %}
+      <a href="{{ post.url }}">Next</a>
+      {% break %}
+    {% endif %}
+    {% assign next = false %}
+    {% if post.id == page.id %}
+      {% assign next = true %}
+    {% endif %}
+  {% endif %}
+{% endfor %}
   <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 
 </div>
