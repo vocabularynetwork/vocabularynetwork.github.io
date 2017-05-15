@@ -24,7 +24,7 @@ url: "https://vocabularynetwork.github.io" # the base hostname & protocol for yo
 twitter_username: jekyllrb
 github_username:  jekyll
 
-#paginate: 1
+paginate: 1
 
 # Build settings
 markdown: kramdown
