@@ -29,11 +29,11 @@
 <div class="wrapper" style="text-align: right; line-height: 2em">
   {% assign posts=site.posts | where:"ref", page.ref | sort: 'lang' %}
   {% for post in posts %} 
-	{% if post.lang == page.lang %}
-		<a href="{{ post.url | prepend: site.baseurl }}" class="{{ post.lang }}">22{{ post.lang }}</a> 
-	{% endif %}
+		<a href="{{ post.url | prepend: site.baseurl }}" class="{{ post.lang }}">1{{ post.lang }}</a> 
   {% endfor %}
 
   {% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %}
-  {% for page in pages %} <a href="{{ page.url | prepend: site.baseurl }}" class="{{ page.lang }}">{{ page.lang }}</a> {% endfor %}
+  {% for page in pages %} 
+	<a href="{{ page.url | prepend: site.baseurl }}" class="{{ page.lang }}">2{{ page.lang }}</a> 
+  {% endfor %}
 </div>
