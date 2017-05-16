@@ -25,3 +25,13 @@ Jetez un coup d'oeil à la [documentation de Jekyll][jekyll-docs] pour en savoir
 [jekyll-docs]: http://jekyllrb.com/docs/home
 [jekyll-gh]:   https://github.com/jekyll/jekyll
 [jekyll-talk]: https://talk.jekyllrb.com/
+
+<ul>
+{% for member in site.data.member1 %}
+  <li>
+    <a href="https://github.com/{{ member.github }}">
+      {{ member.name }}
+    </a>
+  </li>
+{% endfor %}
+</ul>
