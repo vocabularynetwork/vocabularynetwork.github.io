@@ -23,12 +23,14 @@ lang: en
   <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 
 <ul>
-{% for member in site.data.member1 %}
+{% for datas in site.data %}
+{% for data in datas %}
   <li>
-    <a href="https://github.com/{{ member.github }}">
-      {{ member.name }}
+    <a href="https://github.com/{{ data.github }}">
+      {{ data.name }}
     </a>
   </li>
+  {% endfor %}
 {% endfor %}
 </ul>
 </div>
