@@ -24,7 +24,7 @@ lang: en
 
 <ul>
 {% for datas in site.data %}
-{% for data in datas %}
+{% for data in datas[1] %}
   <li>
     <a href="https://github.com/{{ data.github }}">
       {{ data.name }}
