@@ -24,9 +24,10 @@ lang: en
 
 <ul>
 {% for datas in site.data %}
+<a href="/{{ datas.name }}">
 {% for data in datas[1] %}
   <li>
-    <a href="https://github.com/{{ data.github }}">
+    <a href="/{{ data.github }}">
       {{ data.name }}
     </a>
   </li>
